@@ -1,0 +1,134 @@
+/* General Body and Header Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00704A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content Styling */
+.content {
+    max-width: 2000px;
+    margin: 20px 0; /* Adjust margin to 20px on top and bottom, 0 on left and right */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left; /* Add float left to move the content to the left */
+}
+#left-content {
+    float: left;
+}
+
+
+/* Sections and Checkboxes Styling */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section {
+    flex: 1 1 200px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.section h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #00704A;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.section input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Button Styling */
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #00704A;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #00704A;
+    color: #ffffff;
+}
+
+input[type="submit"]:active {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+/* Checkbox and Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Recommendations Section */
+.recommendations {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.section label {
+    cursor: pointer;
+}
+.btn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+.btn.selected {
+    background-color: green;
+    color: white;
+}

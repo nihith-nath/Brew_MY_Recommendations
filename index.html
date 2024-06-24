@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Drink Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Starbucks Drink Recommendation System</h1>
+    </header>
+    <div class="container">
+        <h3>Select Your Favorite Drinks:</h3>
+        <form action="/recommend" method="POST">
+            <div class="form-group drinks-list">
+                {% for drink in drinks %}
+                    <label><input type="checkbox" name="selected_drinks" value="{{ drink }}"> {{ drink }}</label><br>
+                {% endfor %}
+            </div>
+            <h3>Filter Options:</h3>
+            <div class="form-group">
+                <label><input type="checkbox" name="include_all"> Include All</label><br>
+                <label><input type="checkbox" name="include_coffee"> Include Coffee</label><br>
+                <label><input type="checkbox" name="include_tea"> Include Tea</label><br>
+                <label><input type="checkbox" name="include_neither"> Include Neither</label><br>
+                <label><input type="checkbox" name="include_hot"> Include Hot Drinks</label><br>
+                <label><input type="checkbox" name="include_cold"> Include Cold Drinks</label><br>
+                <label><input type="checkbox" name="include_frozen"> Include Frozen Drinks</label><br>
+            </div>
+            <div class="form-group">
+                <label>Number of Recommendations:</label>
+                <input type="number" name="n_recommendations" value="5" min="1" max="10">
+            </div>
+            <input type="submit" value="Get Recommendations">
+        </form>
+        <div class="recommendations" id="recommendations">
+            <!-- Recommendations will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>

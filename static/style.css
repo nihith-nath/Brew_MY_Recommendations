@@ -20,7 +20,7 @@ header h1 {
 
 /* Main Content Styling */
 .content {
-    max-width: 2000px;
+    max-width: 800px;
     margin: 20px 0; /* Adjust margin to 20px on top and bottom, 0 on left and right */
     background-color: #fff;
     padding: 20px;
@@ -31,7 +31,43 @@ header h1 {
 #left-content {
     float: left;
 }
+/* style.css */
 
+
+
+#filters {
+    width: 300px; /* Adjust width as needed */
+    flex-shrink: 0;
+}
+
+
+#craving_text {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* style.css */
+
+.toggle-button {
+    background-color: transparent;
+    color: #007bff; /* Default color for buttons */
+    border: 1px solid #007bff; /* Default border color */
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.toggle-button.active {
+    background-color: #4CAF50; /* Green background when active */
+    color: white; /* White text when active */
+    border-color: #4CAF50; /* Green border when active */
+}
+
+.toggle-button:hover:not(.active) {
+    background-color:#4CAF50; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
 
 /* Sections and Checkboxes Styling */
 .sections {
@@ -39,6 +75,20 @@ header h1 {
     flex-wrap: wrap;
     gap: 20px;
 }
+
+/* style.css */
+
+/* Default checkbox styles */
+input[type="checkbox"] {
+    /* Define default styles here */
+}
+
+/* Style for checked checkboxes */
+input[type="checkbox"]:checked {
+    /* Change background color to green */
+    background-color: #4CAF50; /* Green */
+}
+
 
 .section {
     flex: 1 1 200px;
@@ -51,6 +101,22 @@ header h1 {
 .section img {
     max-width: 100%;
     border-radius: 8px;
+}
+#recommendations {
+    display: block; /* Ensure the button is treated as a block element */
+    margin: 20px auto; /* Center the button and add 20px margin on top and bottom */
+    padding: 15px 30px; /* Increase padding to make the button bigger */
+    font-size: 18px; /* Increase font size */
+    text-align: center; /* Center text inside the button */
+    background-color: #4CAF50; /* Set button background color */
+    color: #fff; /* Set button text color */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+#recommendations:hover {
+    background-color: #0fb300; /* Darken background color on hover */
 }
 
 .section h4 {

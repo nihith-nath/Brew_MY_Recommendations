@@ -4,6 +4,7 @@ from main import get_drink_recommendations, sbdrinks_data
 
 app = Flask(__name__)
 
+# Assuming sbdrinks_data is loaded or imported correctly
 drinks_aslist = sbdrinks_data['Drink_name'].tolist()
 
 @app.route('/')
@@ -13,14 +14,25 @@ def index():
 @app.route('/recommend', methods=['POST'])
 def recommend():
     selected_drinks_names = request.form.getlist('selected_drinks')
-    include_all = 'include_all' in request.form
-    include_coffee = 'include_coffee' in request.form
-    include_tea = 'include_tea' in request.form
-    include_neither = 'include_neither' in request.form
-    include_hot = 'include_hot' in request.form
-    include_cold = 'include_cold' in request.form
-    include_frozen = 'include_frozen' in request.form
+
+    include_all = request.form.get('include_all') == '1'
+    include_coffee = request.form.get('include_coffee') == '1'
+    include_tea = request.form.get('include_tea') == '1'
+    include_neither = request.form.get('include_neither') == '1'
+    include_hot = request.form.get('include_hot') == '1'
+    include_cold = request.form.get('include_cold') == '1'
+    include_frozen = request.form.get('include_frozen') == '1'
     n_recommendations = int(request.form.get('n_recommendations', 5))
+
+    print("Selected Drinks:", selected_drinks_names)
+    print("Include All:", include_all)
+    print("Include Coffee:", include_coffee)
+    print("Include Tea:", include_tea)
+    print("Include Neither:", include_neither)
+    print("Include Hot:", include_hot)
+    print("Include Cold:", include_cold)
+    print("Include Frozen:", include_frozen)
+    print("Number of Recommendations:", n_recommendations)
 
     # Call your recommendation function
     recommendations = get_drink_recommendations(
@@ -35,6 +47,7 @@ def recommend():
         include_frozen=include_frozen,
         n_recommendations=n_recommendations
     )
+
 
     # Format recommendations as HTML
     html_output = '<h2>Recommendations:</h2><ul>'

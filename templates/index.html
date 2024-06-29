@@ -16,7 +16,7 @@
             <form action="/recommend" method="POST">
                 <div class="sections">
                     <div class="section">
-                        <img src="{{ url_for('static', filename='images/hot_coffees.jpg') }}" alt="Hot Coffees"><br>
+                        <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeAmericano.jpg?impolicy=1by1_tight_288" alt="Hot Coffees"><br>
                         <h4>Hot Coffees</h4><br>
                         <label><input type="checkbox" name="selected_drinks" value="Americano"> Americano</label>
                         <label><input type="checkbox" name="selected_drinks" value="Blonde Vanilla Latte"> Blonde Vanilla Latte</label>
@@ -36,7 +36,7 @@
                         <label><input type="checkbox" name="selected_drinks" value="Latte Reserve"> Latte Reserve</label>
                         <label><input type="checkbox" name="selected_drinks" value="White Chocolate Mocha"> White Chocolate Mocha</label>
                         <br>
-                        <img src="{{ url_for('static', filename='images/hot_drinks.jpg') }}" alt="Hot Drinks"><br>
+                        <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_SignatureHotChocolate.jpg?impolicy=1by1_tight_288" alt="Milk, Juice &amp; More" role="presentation"><br>
                         <h4>Hot Drinks</h4><br>
                         <label><input type="checkbox" name="selected_drinks" value="Caramel Apple Spice"> Caramel Apple Spice</label>
                         <label><input type="checkbox" name="selected_drinks" value="Hot Chocolate"> Hot Chocolate</label>
@@ -44,10 +44,8 @@
                         <label><input type="checkbox" name="selected_drinks" value="Steamed Milk"> Steamed Milk</label>
                         <label><input type="checkbox" name="selected_drinks" value="Vanilla Creme"> Vanilla Creme</label>
                         <label><input type="checkbox" name="selected_drinks" value="White Hot Chocolate"> White Hot Chocolate</label>
-                    </div>
-                    
-                    <div class="section">
-                        <img src="{{ url_for('static', filename='images/hot_teas.jpg') }}" alt="Hot Teas"><br>
+                        <br>
+                        <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_ChaiLatte.jpg?impolicy=1by1_tight_288" alt="Hot Teas" role="presentation"><br>
                         <h4>Hot Teas</h4><br>
                         <label><input type="checkbox" name="selected_drinks" value="Chai Tea"> Chai Tea</label>
                         <label><input type="checkbox" name="selected_drinks" value="Chai Tea Latte"> Chai Tea Latte</label>
@@ -63,8 +61,10 @@
                         <label><input type="checkbox" name="selected_drinks" value="Mint Majesty Tea"> Mint Majesty Tea</label>
                         <label><input type="checkbox" name="selected_drinks" value="Peach Tranquility Tea"> Peach Tranquility Tea</label>
                         <br>
-                        <br>
-                        <img src="{{ url_for('static', filename='images/refreshers.jpg') }}" alt="Starbucks Refreshers® Beverages"><br>
+                    </div>
+                    
+                    <div class="section">
+                        <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SummerBerryRefreshersLemonade.jpg?impolicy=1by1_tight_288" alt="Starbucks Refreshers® Beverages" role="presentation"><br>
                         <h4>Starbucks Refreshers® Beverages</h4><br>
                         <label><input type="checkbox" name="selected_drinks" value="Blended Strawberry Lemonade"> Blended Strawberry Lemonade</label>
                         <label><input type="checkbox" name="selected_drinks" value="Dragon Drink Refreshers"> Dragon Drink Refreshers</label>
@@ -78,37 +78,8 @@
                         <label><input type="checkbox" name="selected_drinks" value="Pink Drink"> Pink Drink</label>
                         <label><input type="checkbox" name="selected_drinks" value="Strawberry Açaí Lemonade Refreshers"> Strawberry Açaí Lemonade Refreshers</label>
                         <label><input type="checkbox" name="selected_drinks" value="Strawberry Açaí Refreshers"> Strawberry Açaí Refreshers</label>
-                    </div>
-                    
-                
-                    
-                    <div class="section">
-                        <img src="{{ url_for('static', filename='images/frappuccinos.jpg') }}" alt="Frappuccinos"><br>
-                        <h4>Frappuccinos</h4><br>
-                        <label><input type="checkbox" name="selected_drinks" value="Caffe Vanilla Frappuccino"> Caffe Vanilla Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Caramel Frappuccino"> Caramel Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Caramel Ribbon Crunch Creme Frappuccino"> Caramel Ribbon Crunch Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Caramel Ribbon Crunch Frappuccino"> Caramel Ribbon Crunch Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Chai Creme Frappuccino"> Chai Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Chocolate Cookie Crumble Creme Frappuccino"> Chocolate Cookie Crumble Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Chocolate Java Mint Frappuccino"> Chocolate Java Mint Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Chocolate Mint Creme Frappuccino"> Chocolate Mint Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Coffee Frappuccino"> Coffee Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Double Chocolaty Chip Creme Frappuccino"> Double Chocolaty Chip Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Espresso Frappuccino"> Espresso Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Java Chip Frappuccino"> Java Chip Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Matcha Creme Frappuccino"> Matcha Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Mocha Cookie Crumble Frappuccino"> Mocha Cookie Crumble Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Mocha Frappuccino"> Mocha Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Strawberry Creme Frappuccino"> Strawberry Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="Vanilla Bean Creme Frappuccino"> Vanilla Bean Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="White Chocolate Creme Frappuccino"> White Chocolate Creme Frappuccino</label>
-                        <label><input type="checkbox" name="selected_drinks" value="White Chocolate Mocha Frappuccino"> White Chocolate Mocha Frappuccino</label>
-            
-                    </div>
-                    
-                    <div class="section">
-                        <img src="{{ url_for('static', filename='images/cold_coffees.jpg') }}" alt="Cold Coffees"><br>
+                        <br>
+                        <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221130_WhiteChocolateMacadamiaColdBrew.jpg?impolicy=1by1_tight_288" alt="Cold Coffees" role="presentation"><br>
                         <h4>Cold Coffees</h4><br>
                         <label><input type="checkbox" name="selected_drinks" value="Chocolate Cream Cold Brew"> Chocolate Cream Cold Brew</label>
                         <label><input type="checkbox" name="selected_drinks" value="Cinnamon Caramel Cream Cold Brew"> Cinnamon Caramel Cream Cold Brew</label>
@@ -138,8 +109,32 @@
                         <label><input type="checkbox" name="selected_drinks" value="White Chocolate Macadamia Cream Cold Brew"> White Chocolate Macadamia Cream Cold Brew</label>
                     </div>
                     
+                
+                    
                     <div class="section">
-                        <img src="{{ url_for('static', filename='images/iced_teas.jpg') }}" alt="Iced Teas and Lemonade"><br>
+                        <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_MochaCookieCrumbleFrapp.jpg?impolicy=1by1_tight_288" alt="Frappuccino® Blended Beverages" role="presentation"><br>
+                        <h4>Frappuccinos</h4><br>
+                        <label><input type="checkbox" name="selected_drinks" value="Caffe Vanilla Frappuccino"> Caffe Vanilla Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Caramel Frappuccino"> Caramel Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Caramel Ribbon Crunch Creme Frappuccino"> Caramel Ribbon Crunch Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Caramel Ribbon Crunch Frappuccino"> Caramel Ribbon Crunch Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Chai Creme Frappuccino"> Chai Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Chocolate Cookie Crumble Creme Frappuccino"> Chocolate Cookie Crumble Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Chocolate Java Mint Frappuccino"> Chocolate Java Mint Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Chocolate Mint Creme Frappuccino"> Chocolate Mint Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Coffee Frappuccino"> Coffee Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Double Chocolaty Chip Creme Frappuccino"> Double Chocolaty Chip Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Espresso Frappuccino"> Espresso Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Java Chip Frappuccino"> Java Chip Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Matcha Creme Frappuccino"> Matcha Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Mocha Cookie Crumble Frappuccino"> Mocha Cookie Crumble Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Mocha Frappuccino"> Mocha Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Strawberry Creme Frappuccino"> Strawberry Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="Vanilla Bean Creme Frappuccino"> Vanilla Bean Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="White Chocolate Creme Frappuccino"> White Chocolate Creme Frappuccino</label>
+                        <label><input type="checkbox" name="selected_drinks" value="White Chocolate Mocha Frappuccino"> White Chocolate Mocha Frappuccino</label>
+                        <br>
+                        <img src="https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190531_IcedBlackTea.jpg?impolicy=1by1_tight_288" alt="Iced Tea and Lemonade" role="presentation"><br>
                         <h4>Iced Teas and Lemonade</h4><br>
                         <label><input type="checkbox" name="selected_drinks" value="Lemonade"> Lemonade</label>
                         <label><input type="checkbox" name="selected_drinks" value="Iced Black Tea"> Iced Black Tea</label>
@@ -155,7 +150,9 @@
                         <label><input type="checkbox" name="selected_drinks" value="Iced Peach Green Tea Lemonade"> Iced Peach Green Tea Lemonade</label>
                         <label><input type="checkbox" name="selected_drinks" value="Iced Royal English Breakfast Tea Latte"> Iced Royal English Breakfast Tea Latte</label>
                         <label><input type="checkbox" name="selected_drinks" value="Sparkling Unsweetened Peach Green Tea"> Sparkling Unsweetened Peach Green Tea</label>
+            
                     </div>
+                    
                     
                 </div>
         </div>
@@ -186,9 +183,8 @@
                 <input id="recommendations" type="submit" value="Brew My Recommendations" style="display: none;">
             </form>
 
-            <div class = "output">
-
-                
+            <div class="output" id="recommendations">
+                <!-- This section will be dynamically updated with recommendations -->
             </div>
     
         </div>
@@ -222,6 +218,24 @@
                 }
             });
         });
+    
+        // Function to update the recommendations
+        function updateRecommendations(recommendations) {
+            let html_output = '<h3>Your Top Recommendations:</h3>';
+            html_output += '<ul>';
+            for (let recommendation of recommendations) {
+                html_output += `<li>${recommendation.Drink_name} (Distance: ${recommendation.distance.toFixed(2)})</li>`;
+            }
+            html_output += '</ul>';
+            document.getElementById('recommendations').innerHTML = html_output;
+        }
+
+        // Fetch recommendations and update the output div
+        fetch('/get_recommendations')
+            .then(response => response.json())
+            .then(data => {
+                updateRecommendations(data.recommendations);
+            });
     </script>
 
    

@@ -27,26 +27,30 @@ body {
     align-items: flex-start; /* Align items to the top */
     gap: 20px; /* Adjust space between the divs */
     margin: 20px; /* Add margin around the container if needed */
+    font-weight: bold;
 }
 
 .content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0; /* Remove margin to avoid conflicts */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-shrink: 0; /* Prevent shrinking */
+    
 }
 
 #filters {
-    width: 950px; /* Adjust width as needed */
+    width: 750px; /* Adjust width as needed */
     background-color: #f9f9f9; /* Add background color if needed */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-shrink: 0; /* Prevent shrinking */
     margin-left: 20px; /* Reset margin left */
+    font-weight: bold;
+    
 }
 
 
@@ -77,13 +81,13 @@ body {
 }
 
 .toggle-button.active {
-    background-color: #4CAF50; /* Green background when active */
+    background-color: #00704A; /* Green background when active */
     color: white; /* White text when active */
-    border-color: #4CAF50; /* Green border when active */
+    border-color: #00704A; /* Green border when active */
 }
 
 .toggle-button:hover:not(.active) {
-    background-color:#4CAF50; /* Blue background on hover */
+    background-color:#00704A; /* Blue background on hover */
     color: white; /* White text on hover */
 }
 
@@ -104,7 +108,7 @@ input[type="checkbox"] {
 /* Style for checked checkboxes */
 input[type="checkbox"]:checked {
     /* Change background color to green */
-    background-color: #4CAF50; /* Green */
+    background-color: #00704A; /* Green */
 }
 
 
@@ -126,7 +130,7 @@ input[type="checkbox"]:checked {
     padding: 15px 30px; /* Increase padding to make the button bigger */
     font-size: 18px; /* Increase font size */
     text-align: center; /* Center text inside the button */
-    background-color: #4CAF50; /* Set button background color */
+    background-color: #00704A; /* Set button background color */
     color: #fff; /* Set button text color */
     border: none; /* Remove default button border */
     border-radius: 5px; /* Add rounded corners */
@@ -134,7 +138,7 @@ input[type="checkbox"]:checked {
 }
 
 #recommendations:hover {
-    background-color: #0fb300; /* Darken background color on hover */
+    background-color: #00704A; /* Darken background color on hover */
 }
 
 .section h4 {
@@ -172,7 +176,7 @@ input[type="submit"]:hover {
 }
 
 input[type="submit"]:active {
-    background-color: #4CAF50;
+    background-color: #00704A;
     color: #ffffff;
 }
 
@@ -213,11 +217,11 @@ input[type="checkbox"] {
     color: white;
 }
 .btn.selected {
-    background-color: green;
+    background-color: #00704A;
     color: white;
 }
 
 .selected {
-    background-color: #4CAF50;
+    background-color: #00704A;
     color: white;
 }

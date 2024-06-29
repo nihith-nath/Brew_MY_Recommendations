@@ -48,12 +48,15 @@ def recommend():
         n_recommendations=n_recommendations
     )
 
-
     # Format recommendations as HTML
-    html_output = '<h2>Recommendations:</h2><ul>'
+    html_output = '<div id="recommendations">'
+    html_output += '<h3>Your Top Recommendations:</h3>'
+    html_output += '<ul>'
     for index, row in recommendations.iterrows():
         html_output += f'<li>{row["Drink_name"]} (Distance: {row["distance"]:.2f})</li>'
     html_output += '</ul>'
+    html_output += '</div>'
+
     return html_output
 
 if __name__ == '__main__':

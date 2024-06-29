@@ -17,28 +17,46 @@ header h1 {
     margin: 0;
     font-size: 2rem;
 }
+body {
+    font-family: Arial, sans-serif;
+}
 
-/* Main Content Styling */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Adjust space between the divs */
+    margin: 20px; /* Add margin around the container if needed */
+}
+
 .content {
     max-width: 800px;
-    margin: 20px 0; /* Adjust margin to 20px on top and bottom, 0 on left and right */
+    margin: 0; /* Remove margin to avoid conflicts */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    float: left; /* Add float left to move the content to the left */
+    flex-shrink: 0; /* Prevent shrinking */
 }
+
+#filters {
+    width: 950px; /* Adjust width as needed */
+    background-color: #f9f9f9; /* Add background color if needed */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-left: 20px; /* Reset margin left */
+}
+
+
+
 #left-content {
     float: left;
 }
 /* style.css */
 
 
-
-#filters {
-    width: 300px; /* Adjust width as needed */
-    flex-shrink: 0;
-}
 
 
 #craving_text {
@@ -196,5 +214,10 @@ input[type="checkbox"] {
 }
 .btn.selected {
     background-color: green;
+    color: white;
+}
+
+.selected {
+    background-color: #4CAF50;
     color: white;
 }

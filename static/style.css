@@ -31,13 +31,7 @@ body {
 }
 
 .content {
-    max-width: 1000px;
-    margin: 0; /* Remove margin to avoid conflicts */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0; /* Prevent shrinking */
+   
     
 }
 

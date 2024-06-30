@@ -99,24 +99,12 @@ def get_drink_recommendations(selected_drinks_names, all_drinks_data, include_al
         return pd.DataFrame(columns=['Drink_id', 'Drink_name', 'distance'])
 
     recommendations = find_closest_drinks(mean_vector,filtered_drinks, n_recommendations)
-    
+    print(recommendations)
+    print(type(recommendations))
     return recommendations
 
 # Example usage
-selected_drinks_names = ["Americano"]
-recommendations = get_drink_recommendations(
-    selected_drinks_names,
-    sbdrinks_data,
-    include_all=False,
-    include_coffee=False,
-    include_tea=False,
-    include_neither=False,
-    include_hot=False,
-    include_cold=False,
-    include_frozen=True,
-    n_recommendations=5
-)
-print(recommendations)
+
 
 
 #--------------- Functions for clearing active_drinks and toggling drinks ----------------------#

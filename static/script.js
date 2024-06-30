@@ -54,3 +54,38 @@ $(document).ready(function() {
     // Initial load
     getRecommendations();
 });
+
+$(document).ready(function() {
+    $('#recommendations').on('click', function(event) {
+        event.preventDefault();
+
+        // Gather selected drink preferences
+        var selectedDrinks = [];
+        $('input[name="drinks"]:checked').each(function() {
+            selectedDrinks.push($(this).val());
+        });
+
+        // Log the selected drinks to the console
+        console.log('Selected Drinks:', selectedDrinks);
+
+        // Make AJAX request
+        $.ajax({
+            type: 'POST',
+            url: '/recommend',
+            contentType: 'application/json',
+            data: JSON.stringify({ drinks: selectedDrinks }),
+            success: function(response) {
+                // Update recommendations div with received data
+                var recommendationsHtml = '<h3>Your Top Recommendations:</h3><ul>';
+                response.recommendations.forEach(function(item) {
+                    recommendationsHtml += '<li>' + item.Drink_name + ' (Distance: ' + item.distance.toFixed(2) + ')</li>';
+                });
+                recommendationsHtml += '</ul>';
+                $('#recommendations').html(recommendationsHtml);
+            },
+            error: function(error) {
+                console.log('Error:', error);
+            }
+        });
+    });
+});

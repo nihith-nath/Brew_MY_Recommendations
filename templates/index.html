@@ -160,7 +160,7 @@
 
 
                     <div id="filters">
-                        <h3 id="craving_text">I am Craving ......... </h3>
+                        <h3 id="craving_text">I am Craving 😋 ......... </h3>
                         <div class="form-group">
                             <button type="button" class="btn btn-outline-primary mr-2 mb-2 toggle-button" name="include_all">Everything</button>
                             <button type="button" class="btn btn-outline-primary mr-2 mb-2 toggle-button" name="include_coffee"> Coffee</button>
@@ -190,6 +190,7 @@
     
     <div class="output" id="recommendationsOutput">
         <!-- This section will be dynamically updated with recommendations -->
+        
     </div>   
     
     <footer>
@@ -235,18 +236,18 @@
             .then(response => response.json())
             .then(data => {
                 var recommendationsDiv = document.getElementById('recommendationsOutput');
-                recommendationsDiv.innerHTML = ''; // Clear previous recommendations
+                recommendationsDiv.innerHTML = '<h2>Based on your Favourite drinks ☕ we think you will love <3 these drinks.. </h2>'; // Clear previous recommendations
 
                 if (data.recommendations && data.recommendations.length > 0) {
                     var ul = document.createElement('ul');
                     data.recommendations.forEach(function(drink) {
                         var li = document.createElement('li');
-                        li.textContent = `${drink.Drink_name} (Distance: ${drink.distance.toFixed(2)})`;
+                        li.textContent = `${drink.Drink_name}`;
                         ul.appendChild(li);
                     });
                     recommendationsDiv.appendChild(ul);
                 } else {
-                    recommendationsDiv.textContent = 'No recommendations found.';
+                    recommendationsDiv.textContent = ' No drinks Selected';
                 }
             })
             .catch(error => {

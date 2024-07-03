@@ -6,14 +6,19 @@ body {
 }
 
 header {
-    background-color: #f5f5f5;
-    color: #00704A;
+    background-color: 	#00723f;
+    color: 	#fffcfc;
     text-align: center;
     padding: 5px 0px;
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-style: italic;
     height: 80px;
+}
+
+header a {
+
+    color: #fffcfc
 }
 
 .toggle-button strong {
@@ -49,7 +54,8 @@ body {
 }
 
 .intro h2, .container h3 {
-    color: #006633;
+    font-weight: bold;
+    color: #00723f;
 }
 
 .intro p, .container p {
@@ -59,20 +65,24 @@ body {
 }
 
 .intro a, .container a {
-    color: #006633;
+    color: #00723f;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .intro a:hover, .container a:hover {
-    color: #004d32; /* Darker green on hover */
+    color: #00723f; /* Darker green on hover */
 }
 
 
 .content {
     width: 1000px;
 }
+
+
+
+
 
 #filters {
     flex: auto;
@@ -82,7 +92,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
     font-weight: bold;
-    margin: 10px;
+    margin-top: 30px;
 }
 
 #craving_text {
@@ -101,13 +111,13 @@ body {
 }
 
 .toggle-button.active {
-    background-color: #00704A;
+    background-color: #00723f;
     color: white;
-    border-color: #00704A;
+    border-color: #00723f;
 }
 
 .toggle-button:hover:not(.active) {
-    background-color: #00704A;
+    background-color: #00723f;
     color: white;
 }
 
@@ -121,7 +131,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    background-color: #00704A;
+    background-color: #00723f;
 }
 
 .section {
@@ -145,7 +155,7 @@ input[type="checkbox"]:checked {
     padding: 15px 30px;
     font-size: 18px;
     text-align: center;
-    background-color: #00704A;
+    background-color: #00723f;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -153,14 +163,14 @@ input[type="checkbox"]:checked {
 }
 
 #recommendations:hover {
-    background-color: #00704A;
+    background-color: #00723f;
 }
 
 .section h4 {
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 1.2rem;
-    color: #00704A;
+    color: #00723f;
 }
 
 .section label {
@@ -176,7 +186,7 @@ input[type="checkbox"]:checked {
 input[type="submit"] {
     background-color: #ffffff;
     color: #000000;
-    border: 2px solid #00704A;
+    border: 2px solid #00723f;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
@@ -186,7 +196,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #00704A;
+    background-color: #00723f;
     color: #ffffff;
 }
 
@@ -236,12 +246,12 @@ input[type="checkbox"] {
 
 
 .btn.selected {
-    background-color: #00704A;
+    background-color: #00723f;
     color: white;
 }
 
 .selected {
-    background-color: #00704A;
+    background-color: #00723f;
     color: white;
 }
 
@@ -269,7 +279,7 @@ input[type="checkbox"] {
 }
 
 .output li {
-    background-color: #00704A;
+    background-color: #00723f;
     margin: 10px 0;
     padding: 20px;
     border-radius: 10px;
@@ -285,7 +295,54 @@ input[type="checkbox"] {
 
 .output h3 {
     font-size: 1.5em;
-    color: #00704A;
+    color: #00723f;
     margin-bottom: 15px;
 }
 
+.footer {
+    background-color: #00723f;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a
+{
+    color :#fff
+}
+.collaboration-text {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.collaboration-text h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.collaboration-text p {
+    font-size: 16px;
+    color: #34495e;
+}
+
+.collaboration-text a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.collaboration-text a:hover {
+    text-decoration: underline;
+}
+
+#loadingGif {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}

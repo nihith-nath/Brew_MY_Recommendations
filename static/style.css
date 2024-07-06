@@ -13,9 +13,21 @@ header {
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-style: italic;
-    height: 80px;
+    height: 90px;
+}
+header img{
+    height :80px;
+    transition: transform 0.3s ease-in-out;
+}
+header img:hover {
+    transform: scale(5);
 }
 
+
+header h1
+{
+    margin-top: 0px;
+}
 header a {
 
     color: #fffcfc
@@ -78,6 +90,15 @@ body {
 
 .content {
     width: 1000px;
+    background-color: #f9f9f9;
+    
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    font-weight: bold;
+    
+    text-align: center;
+    
 }
 
 
@@ -150,6 +171,7 @@ input[type="checkbox"]:checked {
 }
 
 #recommendations {
+    
     display: block;
     margin: 20px auto;
     padding: 15px 30px;
@@ -256,16 +278,16 @@ input[type="checkbox"] {
 }
 
 .output {
+    display: none;
     flex: auto;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0;
     font-weight: bold;
     margin: 20px;
     text-align: center;
-    margin-top: 60px;
+    
 }
 
 .output p {
@@ -346,3 +368,4 @@ input[type="checkbox"] {
     text-align: center;
     margin-top: 20px;
 }
+

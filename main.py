@@ -17,7 +17,7 @@ from scipy.spatial.distance import euclidean
 
 #---------------Initial setup and loading of data ----------------------#
 
-file_path = '/Users/HP/Desktop/Starbucks_rs/starbucks_drinks.csv'
+file_path = './starbucks_drinks.csv'
 sbdrinks_data = pd.read_csv(file_path)
 
 ## i renamed the column coz its doesnt name sense for a cloumn name to be "490"

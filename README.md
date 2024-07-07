@@ -1,5 +1,19 @@
-# Starbucks_Recommendation_system
- i am creating a personalized starbucks recommendation system web application that will recommend users new drinks based on their preferences and previously liked drinks
+# Brew My Recommendations
 
+## Overview
+"Brew My Recommendations" is a personalized Starbucks drink recommendation system web application. It recommends new drinks to users based on their preferences and previously liked drinks. The system uses K-means clustering to identify similar drinks and suggest the closest matches to the user's selected preferences.
 
-## check out my recommendation system @ https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations
+## Live Demo
+Check out my recommendation system [here](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
+
+## Features
+- **Personalized Recommendations**: Get drink recommendations tailored to your taste.
+- **Interactive UI**: Easily select preferences and view recommended drinks.
+- **Filter Options**: Filter recommendations by hot/cold drinks and caffeine/no caffeine options.
+- **Dynamic Updates**: Recommendations update dynamically as preferences are changed.
+
+## Project Structure
+The project consists of the following key files:
+- `app.py`: Contains the Flask application setup and route definitions.
+- `main.py`: Handles the recommendation logic and data processing.
+- `index.html`: The front-end interface for user interaction.

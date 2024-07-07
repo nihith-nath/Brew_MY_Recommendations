@@ -6,6 +6,9 @@
 ## Live Demo
 Check out my recommendation system [Brew my Recommendations](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
 
+## Screenshot
+![Brew My Recommendations Live](./brew_my_recommendations_live.png)
+
 ## Features
 - **Personalized Recommendations**: Get drink recommendations tailored to your taste.
 - **Interactive UI**: Easily select preferences and view recommended drinks.

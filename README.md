@@ -6,10 +6,7 @@
 ## Live Demo
 Check out my recommendation system [Brew my Recommendations](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
 
-<video width="600" controls>
-  <source src="./bmr_demo.mov" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe src="https://player.vimeo.com/video/979566801" width="600" height="338" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Screenshot
 ![Brew My Recommendations Live](./brew_my_recommendations_live.png)

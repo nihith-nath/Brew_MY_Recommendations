@@ -7,7 +7,7 @@
 Check out my recommendation system [Brew my Recommendations](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
 
 ## Demo Video
-[![Brew My Recommendations demo](https://via.placeholder.com/300x308.png?text=Demo+Video)](https://vimeo.com/979566632)
+[![Brew My Recommendations demo](https://via.placeholder.com/100x200.png?text=Demo+Video)](https://vimeo.com/979566632)
 
 
 ## Screenshot

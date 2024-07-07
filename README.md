@@ -6,7 +6,7 @@
 ## Live Demo
 Check out my recommendation system [Brew my Recommendations](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
 
-![Brew My Recommendations demo](./bmr_demo.mov)
+![Brew My Recommendations demoo](./bmr_demo.mov)
 
 <video width="600" controls>
   <source src="./bmr_demo.mov" type="video/mp4">

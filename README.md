@@ -1,10 +1,10 @@
-# Brew My Recommendations
+# [Brew My Recommendations](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations)
 
 ## Overview
 "Brew My Recommendations" is a personalized Starbucks drink recommendation system web application. It recommends new drinks to users based on their preferences and previously liked drinks. The system uses K-means inspired algorithm to identify similar drinks and suggest the closest matches to the user's selected preferences.
 
 ## Live Demo
-Check out my recommendation system [here](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
+Check out my recommendation system [Brew my Recommendations](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
 
 ## Features
 - **Personalized Recommendations**: Get drink recommendations tailored to your taste.

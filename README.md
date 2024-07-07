@@ -6,7 +6,8 @@
 ## Live Demo
 Check out my recommendation system [Brew my Recommendations](https://huggingface.co/spaces/Nihith-Nath/Brew_My_Recommendations).
 
-<iframe src="https://player.vimeo.com/video/979566632" width="600" height="338" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+## Demo Video
+[![Brew My Recommendations demo](https://via.placeholder.com/600x338.png?text=Demo+Video)](https://vimeo.com/979566632)
 
 
 ## Screenshot

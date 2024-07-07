@@ -8,6 +8,11 @@ Check out my recommendation system [Brew my Recommendations](https://huggingface
 
 ![Brew My Recommendations demo](./bmr_demo.mov)
 
+<video width="600" controls>
+  <source src="./bmr_demo.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Screenshot
 ![Brew My Recommendations Live](./brew_my_recommendations_live.png)
 
